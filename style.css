@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex; /*membuat elemen sejajar ke samping*/
+    align-items: center;
+    padding: 20px;
+} 
+nav{
+    flex: 1; /**/
+    text-align: right;
+}
+nav ul{
+    /* display: inline-block; */
+    list-style-type: none; /*hilangkan Unordered List*/ 
+}
+nav ul li{
+    display: inline-block; /*membuat elemen sejajar ke samping, height, width dan margin dapat di atur*/
+}
+    /* }
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+} */
