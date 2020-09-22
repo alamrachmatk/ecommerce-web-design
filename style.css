@@ -1,26 +1,49 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 .navbar{
     display: flex; /*membuat elemen sejajar ke samping*/
     align-items: center;
-    padding: 20px;
+    padding: 10px; /*padding jarak dalam */
+    /* background-color: blue; */
 } 
 nav{
-    flex: 1; /**/
+    flex: 1; /*untuk mengisi seluruh ruang kosong dan membaginya sama rata di dalam container*/
     text-align: right;
+    /* background-color: aquamarine; */
 }
 nav ul{
-    /* display: inline-block; */
+    display: inline-block; /*membuat elemen sejajar ke samping, height, width dan margin dapat di atur*/
     list-style-type: none; /*hilangkan Unordered List*/ 
 }
 nav ul li{
     display: inline-block; /*membuat elemen sejajar ke samping, height, width dan margin dapat di atur*/
+    margin-right: 10px; /*padding jarak luar pada tag nav */
 }
-    /* }
-nav ul{
-    display: inline-block;
-    list-style-type: none;
-} */
+a{
+    text-decoration: none; /*menghilangkan underline text dari a href*/
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+   max-width: 1300px; 
+   margin: auto;
+   /* background-color: blueviolet; */
+}
+.row{
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap; /*elemen item tersebut digulung (dipindahkan) ke baris baru bila sudah memenuhi lebar container-nya.*/
+    justify-content: space-around; /*membuat jarak margin kiri dan kanan yang sama antar elemen*/
+}
+.col-2{
+    flex-basis: 50%; /*merapat kecil*/
+    /* min-width: 300px; */
+}
+.col-2 img{
+    max-width: 100%;
+}
