@@ -6,7 +6,7 @@
 .navbar{
     display: flex; /*membuat elemen sejajar ke samping*/
     align-items: center;
-    padding: 10px; /*padding jarak dalam */
+    margin-left: 10px; /*padding jarak dalam */
     /* background-color: blue; */
 } 
 nav{
@@ -36,7 +36,7 @@ p{
 }
 .row{
     display: flex;
-    /* align-items: center; */
+    align-items: center;
     flex-wrap: wrap; /*elemen item tersebut digulung (dipindahkan) ke baris baru bila sudah memenuhi lebar container-nya.*/
     justify-content: space-around; /*membuat jarak margin kiri dan kanan yang sama antar elemen*/
 }
@@ -46,4 +46,18 @@ p{
 }
 .col-2 img{
     max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px; /*mengatur jarak antara paragraf*/
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px; /*8px jarak atas bawah, 30px jarak samping*/
+    border-radius: 30px;
+    margin: 30px 0; /*30px jarak atas bawah, 0 jarak margin dari kiri*/
 }
